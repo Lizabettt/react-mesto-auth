@@ -19,7 +19,7 @@ import AddPlacePopup from "./AddPlacePopup";
 import Login from "./Login";
 import Register from "./Register";
 
-//import InfoTooltip from "./InfoTooltip";
+import InfoTooltip from "./InfoTooltip";
 
 export default function App() {
   const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = useState(false);
@@ -35,6 +35,9 @@ export default function App() {
 
   const navigate = useNavigate();
 
+  const [luckRegister, setLuckRegister] = useState(false);
+  const [isInfoTooltipPopupOpen, setInfoTooltipPopupOpen] = useState(false);
+
   //авторизация
   function handleLogin(dataLog) {
     auth
@@ -47,6 +50,8 @@ export default function App() {
         }
       })
       .catch((err) => {
+        setLuckRegister(false);
+      setInfoTooltipPopupOpen(true);
         console.log(err);
       });
   }
@@ -60,8 +65,16 @@ export default function App() {
         console.log("reg");
         setLoggedIn(true);
         navigate("/sign-in");
+        setLuckRegister(true);
+        setInfoTooltipPopupOpen(true)
       }
+    })
+    .catch((err) => {
+      setLuckRegister(false);
+      setInfoTooltipPopupOpen(true)
+      console.log(err);
     });
+    
   }
 
   //сверим токен и авторизацию
@@ -154,6 +167,7 @@ export default function App() {
     setIsEditProfilePopupOpen(false);
     setIsEditAvatarPopupOpen(false);
     setChooseCard(null);
+    setInfoTooltipPopupOpen(false);
   }
 
   //грузим карточки и инфо пользователя с сервера
@@ -261,6 +275,10 @@ export default function App() {
           isOpen={chooseCard}
           onClose={closeAllPopups}
         />
+        <InfoTooltip
+            isOpen={isInfoTooltipPopupOpen}
+            onClose={closeAllPopups}
+            luckRegister={luckRegister}  />
       </CurrentUserContext.Provider>
     </div>
   );

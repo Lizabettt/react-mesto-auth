@@ -79,3 +79,5 @@
 @import url(./blocks/popup/__btn-close/_type-dark/popup__btn-close_type-dark.css);
 @import url(./blocks/popup/__question/popup__question.css);
 @import url(./blocks/popup/__linkSignIn/popup__linkSignIn.css);
+@import url(./blocks/popup/__pic-luckRegister/popup__pic-luckRegister.css);
+@import url(./blocks/popup/__box-luckRegister/popup__box-luckRegister.css);
