@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mesto-react-auth/static/css/main.75a42606.css",
-    "main.js": "/mesto-react-auth/static/js/main.2d99ff6f.js",
+    "main.css": "/mesto-react-auth/static/css/main.76a5d81a.css",
+    "main.js": "/mesto-react-auth/static/js/main.3e58b173.js",
     "static/media/Inter-Medium.woff": "/mesto-react-auth/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
     "static/media/Inter-Black.woff": "/mesto-react-auth/static/media/Inter-Black.c6938660eec019fefd68.woff",
     "static/media/Inter-Regular.woff": "/mesto-react-auth/static/media/Inter-Regular.8c206db99195777c6769.woff",
@@ -10,17 +10,19 @@
     "static/media/Inter-Regular.woff2": "/mesto-react-auth/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
     "static/media/logo.svg": "/mesto-react-auth/static/media/logo.03b78ada3425e9132ff3db7ea8f4a6f6.svg",
     "static/media/serdce.svg": "/mesto-react-auth/static/media/serdce.87ed371465c7a6a1cd01.svg",
+    "static/media/fatal.svg": "/mesto-react-auth/static/media/fatal.7c6a020bec681932a2af92e04114a848.svg",
     "static/media/basket.svg": "/mesto-react-auth/static/media/basket.823b0cf1b0b7e9cb7cad.svg",
+    "static/media/luck.svg": "/mesto-react-auth/static/media/luck.1b6082f862eac35e2514460237d96ecc.svg",
     "static/media/blackHeart.svg": "/mesto-react-auth/static/media/blackHeart.e787eeb70bb65b7b453a.svg",
     "index.html": "/mesto-react-auth/index.html",
     "static/media/change.svg": "/mesto-react-auth/static/media/change.a1892ea72cb87c8fc3aa6fbcc02b8d17.svg",
     "static/media/pen.svg": "/mesto-react-auth/static/media/pen.a086f758840ae814ecde.svg",
     "static/media/add.svg": "/mesto-react-auth/static/media/add.d86bb2edc2f6eadb96b785d29c82b56e.svg",
-    "main.75a42606.css.map": "/mesto-react-auth/static/css/main.75a42606.css.map",
-    "main.2d99ff6f.js.map": "/mesto-react-auth/static/js/main.2d99ff6f.js.map"
+    "main.76a5d81a.css.map": "/mesto-react-auth/static/css/main.76a5d81a.css.map",
+    "main.3e58b173.js.map": "/mesto-react-auth/static/js/main.3e58b173.js.map"
   },
   "entrypoints": [
-    "static/css/main.75a42606.css",
-    "static/js/main.2d99ff6f.js"
+    "static/css/main.76a5d81a.css",
+    "static/js/main.3e58b173.js"
   ]
 }
