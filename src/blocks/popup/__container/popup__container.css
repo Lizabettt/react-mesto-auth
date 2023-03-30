@@ -19,9 +19,9 @@
     display: flex;
     border-radius: 10px;
     z-index: 1;
-    background-color: #F6F6F6;
+    /* background-color: #F6F6F6; */
     flex-direction: column;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15); */
     position: relative;
 
     animation: popup 3s forwards;  

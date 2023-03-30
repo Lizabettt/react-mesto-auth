@@ -1,4 +1,3 @@
-// import { useRef } from "react";
 import { useEffect } from "react";
 import PopupWithForm from "./PopupWithForm";
 import useForm from "../hooks/useForm";
@@ -8,11 +7,7 @@ export default function EditAvatarPopup({
   onClose,
   onUpdateAvatarUser,
 }) {
-  // const avatar = useRef();
-
-  //По заданию надо конечно использовать useRef,
-  // но по логике надо сюда useEffect. .....
-
+ 
   const { values, setValues, handleChange } = useForm({});
 
   useEffect(() => {
@@ -29,6 +24,7 @@ export default function EditAvatarPopup({
   return (
     <PopupWithForm
       name="user-foto"
+      nameColor="light"
       title="Обновить аватар"
       isOpen={isOpen}
       onClose={onClose}
@@ -36,7 +32,7 @@ export default function EditAvatarPopup({
     >
       <fieldset className="popup__form-input">
         <input
-          className="popup__input popup__input_type_avatar"
+          className="popup__input popup__input_type_light"
           id="popupAvatar"
           type="text"
           placeholder="Введите адрес"
@@ -45,7 +41,6 @@ export default function EditAvatarPopup({
           maxLength="200"
           required
           autoComplete="off"
-          // ref={avatar}
           value={values.avatar || ""}
           onChange={handleChange}
         />

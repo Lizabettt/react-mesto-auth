@@ -2,7 +2,7 @@
     margin: 45px 200px 40px 200px;
     height: 74px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     border-bottom: 1px solid #545454;
 }

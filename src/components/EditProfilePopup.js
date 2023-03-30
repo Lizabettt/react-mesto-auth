@@ -26,6 +26,7 @@ export default function EditProfilePopup({
   return (
     <PopupWithForm
       name="profile"
+      nameColor="light"
       title="Редактировать профиль"
       isOpen={isOpen}
       onClose={onClose}
@@ -33,7 +34,7 @@ export default function EditProfilePopup({
     >
       <fieldset className="popup__form-input">
         <input
-          className="popup__input popup__input_type_name"
+          className="popup__input popup__input_type_light"
           id="popupName"
           type="text"
           placeholder="Имя пользователя"
@@ -47,7 +48,7 @@ export default function EditProfilePopup({
         />
         <span className="popup__help popupName-error"></span>
         <input
-          className="popup__input popup__input_type_job"
+          className="popup__input popup__input_type_light"
           id="popupJob"
           type="text"
           placeholder="Вид деятельности"

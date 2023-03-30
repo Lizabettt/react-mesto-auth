@@ -26,6 +26,7 @@ export default function AddPlacePopup({
   return (
     <PopupWithForm
       name="add-new-card"
+      nameColor="light"
       title="Новое место"
       btnText="Создать"
       isOpen={isOpen}
@@ -34,7 +35,7 @@ export default function AddPlacePopup({
     >
       <fieldset className="popup__form-input">
         <input
-          className="popup__input popup__input_type_name-place"
+          className="popup__input popup__input_type_light"
           id="popupNamePlace"
           type="text"
           placeholder="Название"
@@ -48,7 +49,7 @@ export default function AddPlacePopup({
         />
         <span className="popup__help popupNamePlace-error"></span>
         <input
-          className="popup__input popup__input_type_link-place"
+          className="popup__input popup__input_type_light"
           id="popupLinkPlace"
           type="url"
           placeholder="Ссылка на картинку"
